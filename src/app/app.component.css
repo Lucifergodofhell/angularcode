@@ -1,0 +1,59 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:dodgerblue;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+* {
+  box-sizing: border-box; /* always useful when working with border or padding properties, or any other property that can effect the box-model */
+}
+
+.wrapper {
+  text-align: center;
+  background: gray; /* so we can actually see what's happening */
+  padding: 20px; /* Give us some breathing room */
+}
+
+.button {
+  display: inline-block; /* naturally creates "whitespace" between inline elements */
+}
+
+.button1 {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  padding:20px;
+  color: white; 
+  border: 3px solid #fff;
+  /* non-essential augmentations */
+  transition: .7s; /* smooth out the state change on pseudo-state :hover */
+  min-width: 100px;
+}
+
+.button1.with-margin {
+  margin: auto 10px; /* for additional spacing between inline elements*/
+}
+
+.button1:hover{
+  border: 3px solid #000;
+}

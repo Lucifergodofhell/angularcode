@@ -1,0 +1,10 @@
+<button (click)="showlist()">SHOWLIST</button>
+<ul class ="List">
+  <li *ngFor="let hero of List">
+    <span class="badge"> {{hero.id}}</span> 
+    <span class="badge"> {{hero.firstname}}</span>
+    <span class="badge">{{hero.lastname}}</span>
+    <span class= "badge">{{hero.email}}</span>
+    <span class="badge">{{hero.Age}}</span>
+  </li>
+</ul>

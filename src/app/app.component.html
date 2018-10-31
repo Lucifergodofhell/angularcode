@@ -1,0 +1,37 @@
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+
+</div>
+
+<br>
+<div class="wrapper">
+  <button (click)="MyCreateFunction()" class="button button1 with-margin">Create</button>
+  <button (click)="MyReplaceFunction()" class="button button1 with-margin">Replace</button>
+  <button (click)="MyUpdateFunction()" class="button button1 with-margin">Update</button>
+  <button (click)="MyDeleteFunction()" class="button button1 with-margin">Delete</button>
+  <button (click)="MyShowallFunction()" class="button button1 with-margin">ShowList</button>
+</div>
+
+<hr>
+<div [ngSwitch] =a>
+  <div *ngSwitchCase="'1'">
+    <app-create></app-create>
+  </div>
+  <div  *ngSwitchCase="'2'">
+   <app-replace></app-replace>
+  </div>
+  <div  *ngSwitchCase="'3'">
+     <app-update></app-update>
+  </div>
+  <div  *ngSwitchCase="'4'">
+    <app-delete></app-delete>
+  </div>
+  <div  *ngSwitchCase="'5'">
+    <app-showall></app-showall>
+  </div>
+</div>
+<hr>
+
